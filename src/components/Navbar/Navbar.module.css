@@ -91,9 +91,11 @@
         height: calc(100vh - 50px);
         transition: 0.3s;
         background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: all;
     }
     .overlayOpen {
         background-color: rgba(0, 0, 0, 0);
+        pointer-events: none;
     }
     .links {
         height: 100%;

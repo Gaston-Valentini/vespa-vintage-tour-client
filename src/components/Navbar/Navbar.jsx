@@ -6,7 +6,11 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [windowSize, setWindowSize] = useState(0);
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+    const switchOpen = () => {
+        setIsOpen(!isOpen);
+    };
 
     const handleResize = () => {
         setWindowSize(window.innerWidth);
@@ -18,10 +22,6 @@ export default function Navbar() {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-
-    const switchOpen = () => {
-        setIsOpen(!isOpen);
-    };
 
     return (
         <nav className={style.container}>
