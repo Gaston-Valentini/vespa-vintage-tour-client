@@ -1,0 +1,157 @@
+.container {
+    position: fixed;
+    width: calc(100% - 40px);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    background-color: var(--green);
+    box-shadow: 0 0 10px var(--black);
+    z-index: 10;
+}
+
+.logo {
+    height: 80%;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.overlay {
+    height: 100%;
+}
+
+.links {
+    height: 100%;
+    display: flex;
+}
+
+.linksClose {
+    display: none;
+}
+
+.linksLink {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.3s;
+}
+
+.linksLink:hover {
+    color: white;
+    background-color: var(--black);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+}
+
+.socialLink svg {
+    padding: 7px;
+    font-size: 20px;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.socialLink svg:hover {
+    cursor: pointer;
+    background-color: var(--black);
+    color: white;
+}
+
+.bars {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .container {
+        height: 50px;
+    }
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        height: calc(100vh - 50px);
+        transition: 0.3s;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .overlayOpen {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .links {
+        height: 100%;
+        max-width: 250px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+        background-color: var(--black);
+        border-right: 1px solid white;
+        transition: 0.3s;
+    }
+    .linksOpen {
+        transform: translateX(-251px);
+    }
+    .linksClose {
+        display: flex;
+        align-self: flex-end;
+        padding-right: 20px;
+        font-size: 20px;
+        color: white;
+    }
+    .linksLink {
+        height: max-content;
+        padding: 0;
+        color: white;
+    }
+    .socialMobile {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        max-width: 250px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        transition: 0.3s;
+    }
+    .socialMobileOpen {
+        transform: translateX(-251px);
+    }
+
+    .socialMobileLink {
+        display: flex;
+    }
+    .socialMobileLink svg {
+        padding: 7px;
+        font-size: 20px;
+        color: var(--green);
+        border: 1px solid var(--green);
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+    .socialMobileLink svg:hover {
+        color: var(--black);
+        background-color: var(--green);
+    }
+    .bars {
+        display: flex;
+        font-size: 20px;
+    }
+}
