@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./sections/Header/Header";
 import Essential from "./sections/Essential/Essential";
 import Routes from "./sections/Routes/Routes";
+import About from "./sections/About/About";
 
 export default function App() {
     return (
@@ -11,6 +12,7 @@ export default function App() {
             <Header />
             <Essential />
             <Routes />
+            <About />
         </div>
     );
 }
