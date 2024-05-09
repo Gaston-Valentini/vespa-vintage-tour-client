@@ -22,9 +22,13 @@
 
 .headingText {
     max-width: 1000px;
+    padding: 10px;
     text-align: center;
     font-weight: 600;
-    text-decoration: underline;
+    font-size: 25px;
+    color: white;
+    background-color: var(--red);
+    border: 3px solid white;
 }
 
 .list {

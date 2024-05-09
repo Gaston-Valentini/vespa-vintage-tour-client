@@ -11,7 +11,7 @@ export default function Routes() {
             </div>
             <div className={style.routes}>
                 {routes.map((e) => (
-                    <a href="#" className={style.routesRoute}>
+                    <a href="#" key={e.id} className={style.routesRoute}>
                         <div className={style.routesRoutePhoto}>
                             <div className={style.routesRoutePhotoOverlay}>
                                 <img src={e.images[0]} />

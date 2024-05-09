@@ -1,0 +1,102 @@
+.container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    background-color: var(--black);
+    box-shadow: 0 0 10px var(--black);
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dataTitle {
+    font-weight: 800;
+    color: var(--rose);
+}
+
+.dataSection {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dataSection svg {
+    color: var(--rose);
+}
+
+.dataSection p {
+    color: white;
+}
+
+.dataSocial {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dataSocial a,
+.dataSocial div {
+    padding: 7px;
+    display: flex;
+    color: var(--rose);
+    border: 1px solid var(--rose);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.dataSocial a:hover,
+.dataSocial div:hover {
+    cursor: pointer;
+    color: var(--black);
+    background-color: var(--rose);
+}
+
+.dataSocial svg {
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbarTitle {
+    font-weight: 800;
+    color: var(--green);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--green);
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        justify-self: center;
+    }
+    .dataSocial {
+        align-self: flex-start;
+    }
+}

@@ -10,13 +10,13 @@ export default function Esencial() {
             <div className={style.content}>
                 <div className={style.heading}>
                     <Title text={"Esencial"} />
-                    <p className={style.headingText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolorum aliquam assumenda consequatur? Voluptas officia atque eum nesciunt, accusamus fuga soluta! Corrupti, consectetur tempora rem deleniti atque doloremque optio. Suscipit!</p>
+                    <p className={style.headingText}>Por favor, lea los requisitos que se deben cumplir para disfrutar de la experiencia, gracias.</p>
                 </div>
                 <div className={style.list}>
                     {requeriments.map((e) => (
-                        <div className={style.listElement}>
+                        <div key={e.id} className={style.listElement}>
                             <FaHandPointRight />
-                            {e}
+                            {e.text}
                         </div>
                     ))}
                 </div>
