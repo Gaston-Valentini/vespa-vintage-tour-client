@@ -31,20 +31,20 @@ export default function Navbar() {
             <div className={isOpen ? `${style.overlay} ${style.overlayOpen}` : style.overlay}>
                 <div className={isOpen ? `${style.links} ${style.linksOpen}` : style.links}>
                     <IoMdClose className={style.linksClose} onClick={switchOpen} />
-                    <a href="#" className={style.linksLink}>
-                        ENLACE
+                    <a href="#header" className={style.linksLink}>
+                        INICIO
                     </a>
-                    <a href="#" className={style.linksLink}>
-                        ENLACE
+                    <a href="#esential" className={style.linksLink}>
+                        ESENCIAL
                     </a>
-                    <a href="#" className={style.linksLink}>
-                        ENLACE
+                    <a href="#routes" className={style.linksLink}>
+                        NUESTRAS RUTAS
                     </a>
-                    <a href="#" className={style.linksLink}>
-                        ENLACE
+                    <a href="#about" className={style.linksLink}>
+                        SOBRE NOSOTROS
                     </a>
-                    <a href="#" className={style.linksLink}>
-                        ENLACE
+                    <a href="#contact" className={style.linksLink}>
+                        CONTACTO
                     </a>
                 </div>
                 {windowSize < 800 ? (

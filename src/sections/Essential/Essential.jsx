@@ -6,7 +6,7 @@ import image from "../../assets/images/essential.jpeg";
 
 export default function Esencial() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="esential">
             <div className={style.content}>
                 <div className={style.heading}>
                     <Title text={"Esencial"} />

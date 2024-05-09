@@ -4,7 +4,7 @@ import { routes } from "../../data/data";
 
 export default function Routes() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="routes">
             <div className={style.heading}>
                 <Title text={"Nuestras rutas"} color={"var(--green)"} />
                 <p className={style.headingText}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, recusandae dolore voluptate fugit sequi quasi autem voluptatibus, iusto doloribus asperiores libero reprehenderit laboriosam suscipit placeat repellendus commodi, aut nemo esse.</p>

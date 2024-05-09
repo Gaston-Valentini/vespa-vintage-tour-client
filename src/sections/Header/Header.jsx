@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.png";
 
 export default function Header() {
     return (
-        <header className={style.container}>
+        <header className={style.container} id="header">
             <div className={style.overlay}>
                 <div className={style.image}>
                     <img src={logo} />

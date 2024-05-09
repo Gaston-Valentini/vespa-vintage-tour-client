@@ -39,7 +39,7 @@ export default function Contact() {
     }, [form]);
 
     return (
-        <section className={style.container}>
+        <section className={style.container} id="contact">
             <Title text={"Contacto"} color={"var(--black)"} />
             <form className={style.form} onSubmit={handleSubmit}>
                 <div className={style.formSection}>

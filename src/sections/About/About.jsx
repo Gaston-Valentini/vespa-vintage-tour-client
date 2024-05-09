@@ -3,7 +3,7 @@ import Title from "../../components/Title/Title";
 
 export default function About() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="about">
             <div className={style.overlay}>
                 <Title text={"Una pequeña historia"} color={"white"} />
                 <p className={style.text}>
