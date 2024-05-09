@@ -1,4 +1,5 @@
 .container {
+    text-align: center;
     font-size: 100px;
     font-family: var(--shade);
     line-height: 1.5;
