@@ -1,0 +1,77 @@
+.container {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--black);
+}
+
+.routes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.routesRoute {
+    max-width: 1200px;
+}
+
+.routesRouteData {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.routesRouteDataMap img {
+    width: 100%;
+}
+
+.routesRouteDataInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.routesRouteDataInfoName {
+    font-family: var(--shade);
+    line-height: 1;
+    font-size: 30px;
+    color: var(--green);
+}
+
+.routesRouteDataInfoDescription {
+    color: white;
+}
+
+.routesRouteDataInfoNumbers {
+    display: flex;
+    gap: 20px;
+}
+
+.routesRouteDataInfoNumbersDistance,
+.routesRouteDataInfoNumbersPrice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.routesRouteDataInfoNumbersDistance svg,
+.routesRouteDataInfoNumbersPrice svg {
+    font-size: 20px;
+    color: var(--green);
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .routesRouteData {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

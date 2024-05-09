@@ -6,3 +6,12 @@
     --work: "Work Sans", sans-serif;
     --shade: "Bungee Shade", sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+}

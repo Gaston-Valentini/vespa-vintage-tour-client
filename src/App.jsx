@@ -6,6 +6,7 @@ import Routes from "./sections/Routes/Routes";
 import About from "./sections/About/About";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import DetailedRoutes from "./sections/DetailedRoutes/DetailedRoutes";
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
             <Essential />
             <Routes />
             <About />
+            <DetailedRoutes />
             <Contact />
             <Footer />
         </div>
