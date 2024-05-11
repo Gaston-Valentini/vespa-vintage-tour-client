@@ -1,12 +1,20 @@
 import style from "./Essential.module.css";
 import Title from "../../components/Title/Title";
-import { FaHandPointRight, FaWhatsapp } from "react-icons/fa";
+import { FaHandPointRight } from "react-icons/fa";
 import { requeriments } from "../../data/data";
 import image from "../../assets/images/essential.jpeg";
 
 export default function Esencial() {
+    const onWhatsapp = () => {
+        const phone = "+34603120210";
+        const message = "!Hola! Me gustaría recibir más información, mi nombre es: ";
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+        window.open(url);
+    };
+
     return (
-        <section className={style.container} id="esential">
+        <section className={style.container} id="essential">
             <div className={style.content}>
                 <div className={style.heading}>
                     <Title text={"Esencial"} />
@@ -22,7 +30,9 @@ export default function Esencial() {
                 </div>
                 <div className={style.contact}>
                     <p className={style.contactText}>¿Tienes alguna pregunta?</p>
-                    <div className={style.contactLink}>CONTÁCTANOS</div>
+                    <div className={style.contactLink} onClick={onWhatsapp}>
+                        CONTÁCTANOS
+                    </div>
                 </div>
             </div>
             <div className={style.image}>

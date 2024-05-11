@@ -1,5 +1,5 @@
 import style from "./Navbar.module.css";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo-black.png";
 import { FaWhatsapp, FaInstagram, FaFacebookF, FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { useState, useEffect } from "react";
@@ -14,6 +14,14 @@ export default function Navbar() {
 
     const handleResize = () => {
         setWindowSize(window.innerWidth);
+    };
+
+    const onWhatsapp = () => {
+        const phone = "+34603120210";
+        const message = "!Hola! Me gustaría recibir más información, mi nombre es: ";
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+        window.open(url);
     };
 
     useEffect(() => {
@@ -34,7 +42,7 @@ export default function Navbar() {
                     <a href="#header" className={style.linksLink} onClick={switchOpen}>
                         INICIO
                     </a>
-                    <a href="#esential" className={style.linksLink} onClick={switchOpen}>
+                    <a href="#essential" className={style.linksLink} onClick={switchOpen}>
                         ESENCIAL
                     </a>
                     <a href="#routes" className={style.linksLink} onClick={switchOpen}>
@@ -49,13 +57,13 @@ export default function Navbar() {
                 </div>
                 {windowSize < 800 ? (
                     <div className={isOpen ? `${style.socialMobile} ${style.socialMobileOpen}` : style.socialMobile}>
-                        <a href="#" className={style.socialMobileLink}>
+                        <div onClick={onWhatsapp} className={style.socialMobileLink}>
                             <FaWhatsapp />
-                        </a>
-                        <a href="#" className={style.socialMobileLink}>
+                        </div>
+                        <a href="https://www.instagram.com/vespavintagetours/" target="blank" className={style.socialMobileLink}>
                             <FaInstagram />
                         </a>
-                        <a href="#" className={style.socialMobileLink}>
+                        <a href="https://www.facebook.com/vespa.vintage.tours?rdid=x5RWAh9SkUKTAtcp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FzhmjqvfSA8ijzt2W%2F" target="blank" className={style.socialMobileLink}>
                             <FaFacebookF />
                         </a>
                     </div>
@@ -65,13 +73,13 @@ export default function Navbar() {
             </div>
             {windowSize > 800 ? (
                 <div className={style.social}>
-                    <div className={style.socialLink}>
+                    <div onClick={onWhatsapp} className={style.socialLink}>
                         <FaWhatsapp />
                     </div>
-                    <a href="#" className={style.socialLink}>
+                    <a href="https://www.instagram.com/vespavintagetours/" target="blank" className={style.socialLink}>
                         <FaInstagram />
                     </a>
-                    <a href="#" className={style.socialLink}>
+                    <a href="https://www.facebook.com/vespa.vintage.tours?rdid=x5RWAh9SkUKTAtcp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FzhmjqvfSA8ijzt2W%2F" target="blank" className={style.socialLink}>
                         <FaFacebookF />
                     </a>
                 </div>

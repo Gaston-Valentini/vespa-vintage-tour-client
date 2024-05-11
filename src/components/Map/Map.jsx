@@ -19,38 +19,27 @@ class Map extends Component {
 
     initMap = () => {
         const map = new window.google.maps.Map(document.getElementById("map"), {
-            center: { lat: 38.5410981225187, lng: -0.12553243203016357 },
+            center: { lat: 38.565609, lng: -0.091514 },
             zoom: 15,
         });
 
-        const service = new window.google.maps.places.PlacesService(map);
+        const marker = new window.google.maps.Marker({
+            position: { lat: 38.565609, lng: -0.091514 },
+            map: map,
+            title: "Vespa Vintage Tour",
+        });
 
-        service.getDetails(
-            {
-                placeId: import.meta.env.VITE_GOOGLE_PLACE_ID,
-            },
-            (place, status) => {
-                if (status === window.google.maps.places.PlacesServiceStatus.OK) {
-                    const marker = new window.google.maps.Marker({
-                        position: place.geometry.location,
-                        map: map,
-                        title: place.name,
-                    });
+        const infowindow = new window.google.maps.InfoWindow({
+            content: "<div><strong>Vespa Vintage Tour</strong>",
+        });
 
-                    const infowindow = new window.google.maps.InfoWindow({
-                        content: `<div><strong>${place.name}</strong><br>${place.formatted_address}<br><a href="${place.url}" target="_blank">Ver en Google Maps</a></div>`,
-                    });
-
-                    marker.addListener("click", () => {
-                        infowindow.open({
-                            anchor: marker,
-                            map,
-                            shouldFocus: false,
-                        });
-                    });
-                }
-            }
-        );
+        marker.addListener("click", () => {
+            infowindow.open({
+                anchor: marker,
+                map,
+                shouldFocus: false,
+            });
+        });
     };
 
     render() {

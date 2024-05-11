@@ -10,7 +10,7 @@ export default function DetailedRoutes() {
             <Title text={"Catálogo"} color={"var(--green)"} />
             <div className={style.routes}>
                 {routes.map((e) => (
-                    <div className={style.routesRoute} id={`routes-${e.id}`}>
+                    <div key={e.id} className={style.routesRoute} id={`routes-${e.id}`}>
                         <div className={style.routesRouteData}>
                             <div className={style.routesRouteDataMap}>
                                 <img src={"https://t3.ftcdn.net/jpg/00/62/20/74/360_F_62207459_cL5wYDLWzTYwhXps8bC1N5za9YA0CmEf.jpg"} />

@@ -1,9 +1,17 @@
 import style from "./Footer.module.css";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo-white.png";
 import { FaLocationDot, FaClock, FaPhone, FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
+    const onWhatsapp = () => {
+        const phone = "+34603120210";
+        const message = "!Hola! Me gustaría recibir más información, mi nombre es: ";
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+        window.open(url);
+    };
+
     return (
         <section className={style.container}>
             <div className={style.logo}>
@@ -21,20 +29,20 @@ export default function Footer() {
                 </div>
                 <div className={style.dataSection}>
                     <FaPhone />
-                    <p>+34622345237</p>
+                    <p>+34603120210</p>
                 </div>
                 <div className={style.dataSection}>
                     <MdEmail />
-                    <p>vespavintagetour@gmail.com</p>
+                    <p>vespavintagetours@gmail.com</p>
                 </div>
                 <div className={style.dataSocial}>
-                    <div>
+                    <div onClick={onWhatsapp}>
                         <FaWhatsapp />
                     </div>
-                    <a href="#">
+                    <a href="https://www.instagram.com/vespavintagetours/" target="blank">
                         <FaInstagram />
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com/vespa.vintage.tours?rdid=x5RWAh9SkUKTAtcp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FzhmjqvfSA8ijzt2W%2F" target="blank">
                         <FaFacebookF />
                     </a>
                 </div>
