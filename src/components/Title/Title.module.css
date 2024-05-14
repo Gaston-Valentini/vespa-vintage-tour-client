@@ -1,7 +1,7 @@
 .container {
     text-align: center;
     font-size: 100px;
-    font-family: var(--shade);
+    font-family: var(--secondary);
     line-height: 1.2;
 }
 

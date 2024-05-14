@@ -1,15 +1,9 @@
 .container {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-}
-
-.content {
-    padding: 100px 50px;
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    color: var(--black);
     background-color: var(--green);
 }
 
@@ -67,7 +61,7 @@
     gap: 10px;
     padding: 10px;
     font-weight: 600;
-    border: 1px solid var(--black);
+    border: 2px solid var(--black);
     transition: 0.3s;
 }
 

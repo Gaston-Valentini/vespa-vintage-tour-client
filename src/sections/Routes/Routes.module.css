@@ -67,7 +67,7 @@
     padding: 40px 0 30px;
     text-align: center;
     font-weight: 800;
-    font-family: var(--shade);
+    font-family: var(--secondary);
     line-height: 1.5;
     color: var(--black);
 }

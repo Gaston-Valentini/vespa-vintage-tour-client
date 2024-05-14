@@ -15,28 +15,23 @@ export default function Esencial() {
 
     return (
         <section className={style.container} id="essential">
-            <div className={style.content}>
-                <div className={style.heading}>
-                    <Title text={"Esencial"} />
-                    <p className={style.headingText}>Por favor, lea los requisitos que se deben cumplir para disfrutar de la experiencia, gracias.</p>
-                </div>
-                <div className={style.list}>
-                    {requeriments.map((e) => (
-                        <div key={e.id} className={style.listElement}>
-                            <FaHandPointRight />
-                            {e.text}
-                        </div>
-                    ))}
-                </div>
-                <div className={style.contact}>
-                    <p className={style.contactText}>¿Tienes alguna pregunta?</p>
-                    <div className={style.contactLink} onClick={onWhatsapp}>
-                        CONTÁCTANOS
-                    </div>
-                </div>
+            <div className={style.heading}>
+                <Title text={"Esencial"} />
+                <p className={style.headingText}>Por favor, lea los requisitos que se deben cumplir para disfrutar de la experiencia, gracias.</p>
             </div>
-            <div className={style.image}>
-                <img src={image} />
+            <div className={style.list}>
+                {requeriments.map((e) => (
+                    <div key={e.id} className={style.listElement}>
+                        <FaHandPointRight />
+                        {e.text}
+                    </div>
+                ))}
+            </div>
+            <div className={style.contact}>
+                <p className={style.contactText}>¿Tienes alguna pregunta?</p>
+                <div className={style.contactLink} onClick={onWhatsapp}>
+                    CONTÁCTANOS
+                </div>
             </div>
         </section>
     );

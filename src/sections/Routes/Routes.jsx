@@ -7,7 +7,7 @@ export default function Routes() {
         <section className={style.container} id="routes">
             <div className={style.heading}>
                 <Title text={"Nuestras rutas"} color={"var(--green)"} />
-                <p className={style.headingText}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, recusandae dolore voluptate fugit sequi quasi autem voluptatibus, iusto doloribus asperiores libero reprehenderit laboriosam suscipit placeat repellendus commodi, aut nemo esse.</p>
+                <p className={style.headingText}>Te presentamos nuestras diversas rutas, cada una con recorrido y experiencia únicos</p>
             </div>
             <div className={style.routes}>
                 {routes.map((e) => (

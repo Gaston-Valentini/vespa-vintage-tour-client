@@ -40,6 +40,7 @@ const routes = [
         description: <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsum vel assumenda ullam excepturi necessitatibus est totam sed harum beatae amet tempore doloribus, voluptatum dolores placeat autem. Eum, explicabo? Architecto!</p>,
         images: ["https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg"],
         distance: "20km",
+        time: "90 minutos",
         price: "80€",
     },
     {
@@ -48,6 +49,7 @@ const routes = [
         description: <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsum vel assumenda ullam excepturi necessitatibus est totam sed harum beatae amet tempore doloribus, voluptatum dolores placeat autem. Eum, explicabo? Architecto!</p>,
         images: ["https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg"],
         distance: "30km",
+        time: "30 minutos",
         price: "100€",
     },
     {
@@ -55,6 +57,7 @@ const routes = [
         name: "Ruta 3",
         description: <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsum vel assumenda ullam excepturi necessitatibus est totam sed harum beatae amet tempore doloribus, voluptatum dolores placeat autem. Eum, explicabo? Architecto!</p>,
         images: ["https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg", "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg"],
+        time: "3 horas",
         distance: "60km",
         price: "160€",
     },
@@ -62,7 +65,8 @@ const routes = [
         id: 4,
         name: "Ruta 4",
         description: <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ipsum vel assumenda ullam excepturi necessitatibus est totam sed harum beatae amet tempore doloribus, voluptatum dolores placeat autem. Eum, explicabo? Architecto!</p>,
-        images: ["https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg", "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg"],
+        images: ["https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg", "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg"],
+        time: "1 hora",
         distance: "15km",
         price: "60€",
     },

@@ -48,7 +48,7 @@
 
 .dataSocial a,
 .dataSocial div {
-    padding: 7px;
+    padding: 10px;
     display: flex;
     color: var(--rose);
     border: 1px solid var(--rose);
@@ -64,7 +64,7 @@
 }
 
 .dataSocial svg {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .navbar {

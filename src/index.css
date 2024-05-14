@@ -1,10 +1,10 @@
 :root {
     --black: #303030;
-    --green: #e3e8ad;
+    --green: #bffff6;
     --rose: #e3cfd6;
     --red: #e4544a;
     --work: "Work Sans", sans-serif;
-    --shade: "Bungee Shade", sans-serif;
+    --secondary: "Vast Shadow", serif;
 }
 
 ::-webkit-scrollbar {

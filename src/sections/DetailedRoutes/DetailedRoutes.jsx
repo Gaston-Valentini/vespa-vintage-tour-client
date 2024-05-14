@@ -2,6 +2,7 @@ import style from "./DetailedRoutes.module.css";
 import Title from "../../components/Title/Title";
 import { routes } from "../../data/data";
 import { GiPathDistance } from "react-icons/gi";
+import { LuClock3 } from "react-icons/lu";
 import { IoMdPricetags } from "react-icons/io";
 
 export default function DetailedRoutes() {
@@ -19,13 +20,17 @@ export default function DetailedRoutes() {
                                 <p className={style.routesRouteDataInfoName}>{e.name}</p>
                                 <div className={style.routesRouteDataInfoDescription}>{e.description}</div>
                                 <div className={style.routesRouteDataInfoNumbers}>
-                                    <div className={style.routesRouteDataInfoNumbersDistance}>
+                                    <div className={style.routesRouteDataInfoNumbersValue}>
                                         <GiPathDistance />
                                         <p>{e.distance}</p>
                                     </div>
-                                    <div className={style.routesRouteDataInfoNumbersPrice}>
+                                    <div className={style.routesRouteDataInfoNumbersValue}>
+                                        <LuClock3 />
+                                        <p>{e.time}</p>
+                                    </div>
+                                    <div className={style.routesRouteDataInfoNumbersValue}>
                                         <IoMdPricetags />
-                                        <p>{e.distance}</p>
+                                        <p>{e.price}</p>
                                     </div>
                                 </div>
                             </div>
