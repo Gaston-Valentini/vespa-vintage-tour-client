@@ -1,42 +1,27 @@
 .container {
     padding: 160px 20px 100px;
+    background-color: var(--black);
+}
+
+.data {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    background-color: var(--black);
+    gap: 20px;
 }
 
 .logo {
     width: 100%;
-    max-width: 250px;
+    max-width: 500px;
 }
 
 .logo img {
     width: 100%;
 }
 
-.image {
-    width: 100%;
-    max-width: 600px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
-    border: 10px solid white;
-}
-
-.imageContainer img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.imageBottom {
-    background-color: white;
-}
-
 .slogan {
-    font-family: var(--secondary);
+    text-align: center;
+    font-family: (--secondary);
     font-size: 30px;
     color: white;
 }

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-size: 16px;
-    font-family: var(--work);
+    font-family: var(--primary);
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
 }
