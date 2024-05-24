@@ -88,8 +88,10 @@
 
 .formSection input:focus,
 .formSection textarea:focus,
-.formSection option:focus {
+.formSection option:focus,
+.formSection select:focus {
     outline: none;
+    background: var(--green);
 }
 
 .formSubmit {
