@@ -120,8 +120,23 @@
 }
 
 .map {
+    display: flex;
+    flex-direction: column;
     border: 2px solid var(--black);
     border-left: none;
+}
+
+.mapLink {
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--black);
+    transition: 0.3s;
+}
+
+.mapLink:hover {
+    color: var(--green);
 }
 
 @media (max-width: 800px) {

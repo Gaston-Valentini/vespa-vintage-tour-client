@@ -1,56 +1,21 @@
-const requeriments = [
-    {
-        id: 1,
-        text: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor necessitatibus quos minima, in quidem magni facilis et accusamus reprehenderit, illum doloribus. Quo, expedita minima. Impedit suscipit minima officiis blanditiis!</p>,
-    },
-    {
-        id: 2,
-        text: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor necessitatibus quos minima, in quidem magni facilis et accusamus reprehenderit, illum doloribus. Quo, expedita minima. Impedit suscipit minima officiis blanditiis!</p>,
-    },
-    {
-        id: 3,
-        text: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor necessitatibus quos minima, in quidem magni facilis et accusamus reprehenderit, illum doloribus. Quo, expedita minima. Impedit suscipit minima officiis blanditiis!</p>,
-    },
-    {
-        id: 4,
-        text: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor necessitatibus quos minima, in quidem magni facilis et accusamus reprehenderit, illum doloribus. Quo, expedita minima. Impedit suscipit minima officiis blanditiis!</p>,
-    },
-    {
-        id: 5,
-        text: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor necessitatibus quos minima, in quidem magni facilis et accusamus reprehenderit, illum doloribus. Quo, expedita minima. Impedit suscipit minima officiis blanditiis!</p>,
-    },
-    {
-        id: 6,
-        text: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor necessitatibus quos minima, in quidem magni facilis et accusamus reprehenderit, illum doloribus. Quo, expedita minima. Impedit suscipit minima officiis blanditiis!</p>,
-    },
-    {
-        id: 7,
-        text: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor necessitatibus quos minima, in quidem magni facilis et accusamus reprehenderit, illum doloribus. Quo, expedita minima. Impedit suscipit minima officiis blanditiis!</p>,
-    },
-    {
-        id: 8,
-        text: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor necessitatibus quos minima, in quidem magni facilis et accusamus reprehenderit, illum doloribus. Quo, expedita minima. Impedit suscipit minima officiis blanditiis!</p>,
-    },
-];
-
 const routes = [
     {
         id: 1,
         name: "RUTA 1 - ALBIR + ALTEA ",
         description: <p>Un recorrido por Albir para descubrir su playa de canto rodado y sus magníficas vistas de la Costa Blanca. Conoce Villa Gadea, la joya escondida que te sorprenderá y Altea, un pueblecito precioso con el casco antiguo más bonito de la zona.</p>,
         images: ["https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg"],
-        distance: "20km",
         time: "4 horas",
-        price: "80€",
+        price: "145€",
+        launchPrice: "120€",
     },
     {
         id: 2,
         name: "RUTA 2 - VILLAJOYOSA + BENIDORM ",
         description: <p>Descubre el pueblo de las casitas de colores. Conoce su magnífica historia, visita uno de los puertos más activos de la zona y después, visita la playa de Poniente de Benidorm, déjanos enseñarte las partes que deberías visitar cuando se va el sol y aquellos secretos escondidos que sólo los que vivimos aquí conocemos.</p>,
         images: ["https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg"],
-        distance: "30km",
         time: "4 horas",
-        price: "100€",
+        price: "145€",
+        launchPrice: "120€",
     },
     {
         id: 3,
@@ -58,8 +23,8 @@ const routes = [
         description: <p>Si eres de los que disfrutan de la naturaleza, de pasear tranquilo entre bosques, de disfrutar las vistas, parar para hacer fotos y vivir la vida con una auténtica Actitud Vespa, ésta es tu ruta. Conoce la cara más interior de la Marina Baixa y descubre el Museo de Vehículos Antiguos de Guadalest, donde serás transportado a otras épocas con su magnífica colección.</p>,
         images: ["https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg", "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg"],
         time: "3 horas",
-        distance: "60km",
-        price: "160€",
+        price: "120€",
+        launchPrice: "95€",
     },
     {
         id: 4,
@@ -67,8 +32,8 @@ const routes = [
         description: <p>¿Conoces Guadalest? Este pueblito de interior, enclavado entre montañas y construido sobre la roca más dura, te dará la oportunidad de respirar siglos de historia de un solo vistazo. Disfruta de sus múltiples y curiosos museos, prueba la gastronomía local y descubre la artesanía de la zona. ¡Ponte zapatos cómodos!</p>,
         images: ["https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg", "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg"],
         time: "3 horas",
-        distance: "15km",
-        price: "60€",
+        price: "120€",
+        launchPrice: "95€",
     },
     {
         id: 5,
@@ -76,14 +41,14 @@ const routes = [
         description: <p>Si prefieres pasar un poquito menos de rato entre personas y un poquito más de rato viviendo la calma de la montaña, ésta ruta te da la oportunidad de conocer Guadalest reservando un poquito de tiempo para conocer la Joya Esmeralda, el único pantano de este color que podrás ver. ¡Pregúntanos su historia!</p>,
         images: ["https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg", "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg"],
         time: "4 horas",
-        distance: "15km",
-        price: "60€",
+        price: "145€",
+        launchPrice: "120€",
     },
     {
         id: 6,
         name: "RUTA 6 - ¡TE ESCUCHAMOS! ",
         description: (
-            <p>
+            <>
                 En Vespa Vintage Tours, entendemos que cada viajero es único, con sus propios intereses, horarios y deseos de exploración. Por eso hemos reservado un espacio donde puedes crear tu propia ruta turística a medida. Diseñada para ofrecerte la máxima flexibilidad y libertad. Esta opción te permite planificar tu aventura ideal según el tiempo disponible, la zona que deseas visitar y las experiencias que quieras incluir.
                 <br />
                 <br />
@@ -99,15 +64,11 @@ const routes = [
                     </li>
                 </ul>
                 <br />
-                <br />
                 Tienes el control total para diseñar una aventura que se adapte perfectamente a tus intereses y necesidades. Deja de lado las rutas predefinidas y los horarios rígidos, y sumérgete en una exploración auténtica y relajante a tu propio ritmo.
-            </p>
+            </>
         ),
         images: ["https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg", "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg", "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg", "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg"],
-        time: "1 hora",
-        distance: "15km",
-        price: "60€",
     },
 ];
 
-export { requeriments, routes };
+export { routes };

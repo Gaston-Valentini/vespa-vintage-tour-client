@@ -21,11 +21,11 @@ export default function Footer() {
                 <div className={style.dataTitle}>CONTÁCTANOS</div>
                 <div className={style.dataSection}>
                     <FaLocationDot />
-                    <p>Av. Los Olmos 12, San Juan - Alicante, 04302</p>
+                    <p>Plaça Apr 3, 92, 03502 Benidorm, Alicante</p>
                 </div>
                 <div className={style.dataSection}>
                     <FaClock />
-                    <p>08:00 - 17:00</p>
+                    <p>09:00 - 17:00 (Rutas sábados y domingos)</p>
                 </div>
                 <div className={style.dataSection}>
                     <FaPhone />
@@ -50,9 +50,9 @@ export default function Footer() {
             <div className={style.navbar}>
                 <div className={style.navbarTitle}>NAVEGACIÓN</div>
                 <a href="#header">Inicio</a>
-                <a href="#essential">Esencial</a>
-                <a href="#routes">Nuestras rutas</a>
                 <a href="#about">Sobre nosotros</a>
+                <a href="#routes">Nuestras rutas</a>
+                <a href="#important">Importante</a>
                 <a href="#contact">Contacto</a>
             </div>
         </section>

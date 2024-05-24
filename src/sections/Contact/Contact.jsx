@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import style from "./Contact.module.css";
 import Title from "../../components/Title/Title";
 import { FaUserAlt, FaRegAddressCard } from "react-icons/fa";
@@ -5,8 +6,10 @@ import { MdAlternateEmail, MdDateRange, MdOutlineCreditCardOff } from "react-ico
 import { BiMessageDetail } from "react-icons/bi";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
-import Map from "../../components/Map/Map";
-import { useEffect, useState } from "react";
+import Flatpickr from "flatpickr";
+import "flatpickr/dist/flatpickr.min.css";
+import { Spanish } from "flatpickr/dist/l10n/es.js";
+import MapComponent from "../../components/Map/Map";
 
 export default function Contact() {
     const [form, setForm] = useState({
@@ -38,6 +41,27 @@ export default function Contact() {
         const areComplete = name !== "" && phone !== "" && license !== "" && licenseDate !== "";
         setCanSubmit(areComplete);
     }, [form]);
+
+    useEffect(() => {
+        Flatpickr(document.getElementById("routeDate"), {
+            locale: {
+                ...Spanish,
+            },
+            dateFormat: "d/m/Y",
+            defaultDate: null,
+            disable: [
+                function (date) {
+                    return date.getDay() !== 0 && date.getDay() !== 6;
+                },
+            ],
+            onChange: (selectedDates, dateStr) => {
+                setForm((prevState) => ({
+                    ...prevState,
+                    routeDate: dateStr,
+                }));
+            },
+        });
+    }, []);
 
     return (
         <section className={style.container} id="contact">
@@ -77,23 +101,19 @@ export default function Contact() {
                         <span>Fecha de ruta</span>
                         <div className={style.formSectionInput}>
                             <MdDateRange />
-                            <select name="routeDate" onChange={(e) => handleInput(e)}>
-                                <option>Opción 1</option>
-                                <option>Opción 2</option>
-                                <option>Opción 3</option>
-                            </select>
+                            <input type="text" id="routeDate" name="routeDate" placeholder="dd/mm/yyyy" readOnly value={form.routeDate} />
                         </div>
                     </div>
                     <div className={style.formSection}>
                         <span>
-                            Tipo de carnet de conducir <span>*</span>
+                            Tienes carnet de moto <span>*</span>
                         </span>
                         <div className={style.formSectionInput}>
                             <FaRegAddressCard />
                             <select name="license" onChange={(e) => handleInput(e)}>
-                                <option>Opción 1</option>
-                                <option>Opción 2</option>
-                                <option>Opción 3</option>
+                                <option hidden>Selecciona una opción</option>
+                                <option>Sí</option>
+                                <option>No</option>
                             </select>
                         </div>
                     </div>
@@ -109,7 +129,10 @@ export default function Contact() {
                     <input type="submit" value="Enviar" disabled={!canSubmit} className={style.formSubmit} />
                 </form>
                 <div className={style.map}>
-                    <Map />
+                    <MapComponent />
+                    <a href="https://www.google.com/maps/place/Vespa+Vintage+Tours/@38.5653324,-0.0937996,17z/data=!3m1!4b1!4m6!3m5!1s0x29a8c469f09582bb:0xceddfded8b70df93!8m2!3d38.5653324!4d-0.0912247!16s%2Fg%2F11vxqw6jsh?entry=ttu" target="_blank" className={style.mapLink}>
+                        Ver ruta
+                    </a>
                 </div>
             </div>
         </section>

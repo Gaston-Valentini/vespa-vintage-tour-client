@@ -1,0 +1,121 @@
+.container {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--green);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.headingText {
+    max-width: 1000px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: underline;
+    color: var(--red);
+}
+
+.list {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.listElement {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.listElementImage {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.listElementImage img {
+    width: 70%;
+    height: 70%;
+    filter: invert(100%);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactText {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-weight: 600;
+    border: 2px solid var(--black);
+    transition: 0.3s;
+}
+
+.contactLink:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--black);
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px var(--black);
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 50px 20px;
+    }
+    .headingText {
+        font-size: 16px;
+    }
+    .listElement {
+        grid-template-columns: 60px 1fr;
+    }
+    .listElementImage {
+        width: 60px;
+        height: 60px;
+    }
+    .contactText {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .list {
+        grid-template-columns: 1fr;
+    }
+}

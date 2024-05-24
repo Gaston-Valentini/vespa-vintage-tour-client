@@ -1,13 +1,17 @@
 .container {
-    padding: 160px 20px 100px;
-    background-color: var(--black);
+    background-image: url("../../assets/images/header.jpeg");
+    background-position: center;
+    background-size: cover;
 }
 
-.data {
+.overlay {
+    width: calc(100% - 40px);
+    padding: 160px 20px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo {
@@ -21,7 +25,16 @@
 
 .slogan {
     text-align: center;
-    font-family: (--secondary);
-    font-size: 30px;
+    font-family: var(--secondary);
+    font-size: 40px;
     color: white;
+}
+
+@media (max-width: 800px) {
+    .overlay {
+        padding: 120px 20px 50px;
+    }
+    .slogan {
+        font-size: 30px;
+    }
 }

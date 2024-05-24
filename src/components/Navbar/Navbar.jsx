@@ -42,14 +42,14 @@ export default function Navbar() {
                     <a href="#header" className={style.linksLink} onClick={switchOpen}>
                         INICIO
                     </a>
-                    <a href="#essential" className={style.linksLink} onClick={switchOpen}>
-                        ESENCIAL
+                    <a href="#about" className={style.linksLink} onClick={switchOpen}>
+                        SOBRE NOSOTROS
                     </a>
                     <a href="#routes" className={style.linksLink} onClick={switchOpen}>
                         NUESTRAS RUTAS
                     </a>
-                    <a href="#about" className={style.linksLink} onClick={switchOpen}>
-                        SOBRE NOSOTROS
+                    <a href="#important" className={style.linksLink} onClick={switchOpen}>
+                        IMPORTANTE
                     </a>
                     <a href="#contact" className={style.linksLink} onClick={switchOpen}>
                         CONTACTO
