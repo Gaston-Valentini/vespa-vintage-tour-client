@@ -14,7 +14,7 @@ export default function Routes() {
                     <a href={`#routes-${e.id}`} key={e.id} className={style.routesRoute}>
                         <div className={style.routesRoutePhoto}>
                             <div className={style.routesRoutePhotoOverlay}>
-                                <img src={e.images[0]} />
+                                <img src={e.frontPage} />
                             </div>
                         </div>
                         <p className={style.routesRouteName}>{e.name}</p>

@@ -13,7 +13,7 @@ export default function DetailedRoutes() {
                     <div key={e.id} className={style.routesRoute} id={`routes-${e.id}`}>
                         <div className={style.routesRoutePhoto}>
                             <div className={style.routesRoutePhotoImage}>
-                                <img src={"https://t3.ftcdn.net/jpg/00/62/20/74/360_F_62207459_cL5wYDLWzTYwhXps8bC1N5za9YA0CmEf.jpg"} />
+                                <img src={e.frontPage} />
                             </div>
                             <div className={style.routesRoutePhotoBottom}></div>
                         </div>
@@ -36,7 +36,7 @@ export default function DetailedRoutes() {
                                     </div>
                                 )}
                             </div>
-                            {e.id % 2 === 0 ? (
+                            {e.id % 2 === 0 && e.id !== 6 && (
                                 <div className={style.routesRouteDataGalleryOne}>
                                     {e.images.map((photo, index) => (
                                         <div key={index} className={style.routesRouteDataGalleryPhoto}>
@@ -47,7 +47,8 @@ export default function DetailedRoutes() {
                                         </div>
                                     ))}
                                 </div>
-                            ) : (
+                            )}
+                            {e.id % 2 !== 0 && (
                                 <div className={style.routesRouteDataGalleryTwo}>
                                     {e.images.map((photo, index) => (
                                         <div key={index} className={style.routesRouteDataGalleryPhoto}>

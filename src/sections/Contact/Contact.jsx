@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import style from "./Contact.module.css";
 import Title from "../../components/Title/Title";
 import { FaUserAlt, FaRegAddressCard } from "react-icons/fa";
@@ -21,7 +21,8 @@ export default function Contact() {
         license: "",
         licenseDate: "",
     });
-
+    const [message, setMessage] = useState("");
+    const formRef = useRef(null);
     const [canSubmit, setCanSubmit] = useState(true);
 
     const handleInput = (e) => {
@@ -34,6 +35,23 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, formRef.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY).then(
+            (result) => {
+                console.log(result);
+                setMessage(200);
+                setTimeout(() => {
+                    setMessage("");
+                }, 5000);
+            },
+            (error) => {
+                console.log(error);
+                setMessage(400);
+                setTimeout(() => {
+                    setMessage("");
+                }, 5000);
+            }
+        );
     };
 
     useEffect(() => {
@@ -67,7 +85,7 @@ export default function Contact() {
         <section className={style.container} id="contact">
             <Title text={"Contacto"} color={"var(--black)"} />
             <div className={style.content}>
-                <form className={style.form} onSubmit={handleSubmit}>
+                <form className={style.form} ref={formRef} onSubmit={(e) => handleSubmit(e)}>
                     <div className={style.formSection}>
                         <span>
                             Nombre <span>*</span>
@@ -126,6 +144,8 @@ export default function Contact() {
                             <input type="date" name="licenseDate" onChange={(e) => handleInput(e)} />
                         </div>
                     </div>
+                    {message === 200 && <p className={style.formMessageOk}>Formulario enviado correctamente</p>}
+                    {message === 400 && <p className={style.formMessageBad}>Ha ocurrido un error en el envío del formulario, por favor inténtalo nuevamente</p>}
                     <input type="submit" value="Enviar" disabled={!canSubmit} className={style.formSubmit} />
                 </form>
                 <div className={style.map}>
