@@ -92,11 +92,15 @@
     .container {
         padding: 20px;
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     .logo {
         justify-self: center;
     }
     .dataSocial {
         align-self: flex-start;
+    }
+    .dataSocial svg {
+        font-size: 20px;
     }
 }

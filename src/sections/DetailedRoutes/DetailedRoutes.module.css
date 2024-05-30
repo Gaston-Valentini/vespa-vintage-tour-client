@@ -127,6 +127,7 @@
 @media (max-width: 800px) {
     .container {
         padding: 50px 20px;
+        gap: 20px;
     }
     .routesRoute {
         grid-template-columns: 1fr;
