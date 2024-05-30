@@ -1,0 +1,93 @@
+{
+    "navbar": {
+        "language": "Language",
+        "spanish": "Spanish",
+        "english": "English",
+        "linkOne": "HOME",
+        "linkTwo": "ABOUT US",
+        "linkThree": "OUR ROUTES",
+        "linkFour": "IMPORTANT",
+        "linkFive": "CONTACT"
+    },
+    "header": {
+        "text": "Enjoying life with a Vespa attitude!"
+    },
+    "about": {
+        "title": "A little story",
+        "textOne": "Welcome to Vespa Vintage Tours!",
+        "textTwo": "We are Raúl and Alicia, and we are delighted to introduce you to our passion: offering unforgettable experiences aboard restored vintage Vespas. Since we founded Vespa Vintage Tours, our mission has been to give a second life to these iconic Italian scooters while providing you with a unique and charming way to explore the world.",
+        "textThree": "Each Vespa we rescue has its own story, and we dedicate time and effort to restore them to their original splendor. It excites us to think that by restoring them, we are preserving a part of history and creating new memories for our customers. For us, there is nothing more gratifying than seeing the smile on your face as you explore stunning landscapes and hidden places, all without the stress of typical tourist tours.",
+        "textFour": "We have designed a variety of routes to suit all tastes. Whether you want to get lost in the cobblestone streets of picturesque towns, enjoy the serenity of nature, or discover historical monuments from a different perspective, our Vespas will take you there in style and comfort. Each route has been created with what we would like to see if we were discovering our region with new eyes for the first time. We are romantics!",
+        "textFive": "Our commitment is to offer you not just a tour, but an authentic and relaxing experience. We want you to feel the freedom, culture, and passion that inspire us every day. So, join us and let the magic of vintage Vespas transform the way you see the world. We are ready to take you on an unforgettable adventure!",
+        "textSix": "With love, Raúl and Alicia"
+    },
+    "routes": {
+        "title": "Our Routes",
+        "subtitle": "Introducing our various routes, each with a unique journey and experience"
+    },
+    "important": {
+        "title": "Important",
+        "subtitle": "Please read the requirements that must be met to enjoy the experience, thank you.",
+        "textOne": "Your eyes are essential. Protect them during your experience with glasses you love. They can be prescription, sunglasses... (mandatory)",
+        "textTwo": "You need to have a driver's license that allows you to drive 125cc motorcycles.",
+        "textThree": "Wear closed and well-fitted shoes (mandatory)",
+        "textFour": "Reckless driving is not allowed.",
+        "textFive": "We have a zero-tolerance policy for drugs and alcohol. If we suspect you have been drinking or using drugs, your tour may be canceled without a refund.",
+        "textSix": "We love children! If your little one is 1.35m or taller and 8 years or older, we would love to meet them! You will always be responsible for their well-being during the entire tour, so keep an eye on them!",
+        "answer": "Do you have any questions?",
+        "contact": "CONTACT US"
+    },
+    "detailedRoutes": {
+        "title": "Catalogue",
+        "routeOneTitle": "ROUTE 1 - ALBIR + ALTEA",
+        "routeOneText": "A tour through Albir to discover its pebble beach and magnificent views of the Costa Blanca. Discover Villa Gadea, the hidden gem that will surprise you, and Altea, a beautiful village with the most charming old town in the area.",
+        "routeTwoTitle": "ROUTE 2 - VILLAJOYOSA + BENIDORM",
+        "routeTwoText": "Discover the village of colorful houses. Learn about its magnificent history, visit one of the most active ports in the area, and then visit the Poniente beach in Benidorm. Let us show you the places you should visit when the sun goes down and those hidden secrets only known to locals.",
+        "routeThreeTitle": "ROUTE 3 - GUADALEST RESERVOIR",
+        "routeThreeText": "If you prefer to spend a little less time among people and a little more time experiencing the calm of the mountains, this route gives you the opportunity to discover Guadalest while reserving some time to see the Emerald Jewel, the only reservoir of this color you will see. Ask us about its history!",
+        "routeFourTitle": "ROUTE 4 - GUADALEST VILLAGE",
+        "routeFourText": "Do you know Guadalest? This inland village, nestled between mountains and built on the hardest rock, will give you the opportunity to breathe in centuries of history at a glance. Enjoy its multiple and curious museums, taste the local cuisine, and discover the area's craftsmanship. Wear comfortable shoes!",
+        "routeFiveTitle": "ROUTE 5 - MUSEUM OF VINTAGE VEHICLES",
+        "routeFiveText": "If you enjoy nature, leisurely walks through forests, enjoying the views, stopping to take photos, and living life with an authentic Vespa Attitude, this is your route. Discover the inland face of the Marina Baixa and visit the Guadalest Museum of Vintage Vehicles, where you will be transported to other times with its magnificent collection.",
+        "routeSixTitle": "ROUTE 6 - WE LISTEN TO YOU!",
+        "routeSixTextOne": "At Vespa Vintage Tours, we understand that each traveler is unique, with their own interests, schedules, and desires for exploration. That's why we have reserved a space where you can create your own custom tour. Designed to offer you maximum flexibility and freedom, this option allows you to plan your ideal adventure based on the time available, the area you wish to visit, and the experiences you want to include.",
+        "routeSixListTitleOne": "Let us know your available time:",
+        "routeSixListTextOne": "Whether you have a free morning, a full day, or a few hours in the late afternoon, we will show you the best options to make the most of every minute.",
+        "routeSixListTitleTwo": "Choose the area you want to explore:",
+        "routeSixListTextTwo": "From charming historic villages and stunning natural landscapes to vibrant, lively cities, you have the freedom to choose the area you most want to discover.",
+        "routeSixListTitleThree": "Customize your experience:",
+        "routeSixListTextThree": "Are you looking for an unforgettable gastronomic experience? Do you prefer a cultural tour full of history? Or maybe an outdoor adventure in nature? We will love to hear from you.",
+        "routeSixTextTwo": "You have full control to design an adventure that perfectly suits your interests and needs. Set aside predefined routes and rigid schedules, and immerse yourself in an authentic and relaxing exploration at your own pace.",
+        "routePrice": "launch price",
+        "routeHours": "hours"
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "routeDate": "Route date",
+        "license": "Do you have a motorcycle license?",
+        "licenseOne": "Select any option",
+        "licenseTwo": "Yes",
+        "licenseThree": "No",
+        "expirydate": "Expiration date",
+        "terms": "I have read and accept the ",
+        "file": "Terms and Conditions",
+        "submit": "Send",
+        "submitOk": "Form submitted successfully",
+        "submitNo": "An error occurred while submitting the form, please try again",
+        "showRoute": "Show Route"
+    },
+    "footer": {
+        "contact": "CONTACT US",
+        "navigation": "NAVIGATION",
+        "navigationOne": "Home",
+        "navigationTwo": "About Us",
+        "navigationThree": "Our Routes",
+        "navigationFour": "Important",
+        "navigationFive": "Contact",
+        "hour": "09:00 - 17:00 (Tours on Saturdays and Sundays)"
+    }
+}

@@ -14,11 +14,28 @@
 
 .logo {
     height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo img {
     height: 100%;
     filter: invert(20%);
+}
+
+.logoLanguage {
+    font-weight: 600;
+    background-color: var(--green);
+    border: 2px solid var(--black);
+    outline: none;
+    transition: 0.3s;
+}
+
+.logoLanguage:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--black);
 }
 
 .overlay {
@@ -81,7 +98,7 @@
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .container {
         height: 50px;
     }

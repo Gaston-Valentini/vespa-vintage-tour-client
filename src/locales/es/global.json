@@ -1,0 +1,93 @@
+{
+    "navbar": {
+        "language": "Idioma",
+        "spanish": "Español",
+        "english": "Inglés",
+        "linkOne": "INICIO",
+        "linkTwo": "SOBRE NOSOTROS",
+        "linkThree": "NUESTRAS RUTAS",
+        "linkFour": "IMPORTANTE",
+        "linkFive": "CONTACTO"
+    },
+    "header": {
+        "text": "Disfrutando la vida con actitud Vespa!"
+    },
+    "about": {
+        "title": "Una pequeña historia",
+        "textOne": "¡Bienvenidos a Vespa Vintage Tours!",
+        "textTwo": "Somos Raúl y Alicia, y estamos encantados de presentarte nuestra pasión: ofrecerte experiencias inolvidables a bordo de auténticas Vespas antiguas restauradas. Desde que fundamos Vespa Vintage Tours, nuestra misión ha sido dar una segunda vida a estos icónicos scooters italianos y, al mismo tiempo, brindarte una forma única y encantadora de descubrir el mundo.",
+        "textThree": "Cada Vespa que rescatamos tiene su propia historia, y nosotros dedicamos tiempo y esfuerzo para devolverles su esplendor original. Nos emociona pensar que, al restaurarlas, estamos preservando una parte de la historia y creando nuevas memorias para nuestros clientes. Para nosotros, no hay nada más gratificante que ver la sonrisa en tu rostro mientras exploras paisajes impresionantes y lugares escondidos, todo sin el estrés de los típicos tours turísticos.",
+        "textFour": "Hemos diseñado una variedad de rutas que se adaptan a todos los gustos. Ya sea que quieras perderte en las calles empedradas de pintorescos pueblos, disfrutar de la serenidad de la naturaleza o descubrir monumentos históricos desde una perspectiva diferente, nuestras Vespas te llevarán allí con estilo y comodidad. Cada una de ellas se ha creado pensando en lo que nos gustaría ver si viéramos nuestra comarca con ojos nuevos, por primera vez. ¡Somos unos románticos!",
+        "textFive": "Nuestro compromiso es ofrecerte no solo un tour, sino una experiencia auténtica y relajante. Queremos que sientas la libertad, la cultura y la pasión que nos inspiran cada día. Así que, únete a nosotros y deja que la magia de las Vespas antiguas transforme tu manera de ver el mundo. ¡Estamos listos para llevarte en una aventura inolvidable!",
+        "textSix": "Con cariño, Raúl y Alicia"
+    },
+    "routes": {
+        "title": "Nuestras rutas",
+        "subtitle": "Te presentamos nuestras diversas rutas, cada una con recorrido y experiencia únicos"
+    },
+    "important": {
+        "title": "Importante",
+        "subtitle": "Por favor, lea los requisitos que se deben cumplir para disfrutar de la experiencia, gracias.",
+        "textOne": "Tus ojos son fundamentales. Protégelos durante tu experiencia con unas gafas que te encanten. Pueden ser graduadas, de sol... (obligatorio)",
+        "textTwo": "Necesitas tener un carnet de conducir habilitante para conducir motos de 125cc.",
+        "textThree": "Trae zapato cerrado y bien ajustado (obligatorio)",
+        "textFour": "La conducción temeraria no está permitida.",
+        "textFive": "Tenemos una política de tolerancia cero con drogas y alcohol. Si sospechamos que has bebido o has consumido drogas, tu excursión podrá ser cancelada sin derecho a devolución de tu dinero.",
+        "textSix": "¡Nos encantan los niños! Si tu peque mide 1,35m o más y tiene 8 años o mas, nos encantaría conocerlo! Siempre serás responsable de su bienestar durante toda la excursión, ¡no le quites el ojo!",
+        "answer": "¿Tienes alguna pregunta?",
+        "contact": "CONTÁCTANOS"
+    },
+    "detailedRoutes": {
+        "title": "Catálogo",
+        "routeOneTitle": "RUTA 1 - ALBIR + ALTEA",
+        "routeOneText": "Un recorrido por Albir para descubrir su playa de canto rodado y sus magníficas vistas de la Costa Blanca. Conoce Villa Gadea, la joya escondida que te sorprenderá y Altea, un pueblecito precioso con el casco antiguo más bonito de la zona.",
+        "routeTwoTitle": "RUTA 2 - VILLAJOYOSA + BENIDORM",
+        "routeTwoText": "Descubre el pueblo de las casitas de colores. Conoce su magnífica historia, visita uno de los puertos más activos de la zona y después, visita la playa de Poniente de Benidorm, déjanos enseñarte las partes que deberías visitar cuando se va el sol y aquellos secretos escondidos que sólo los que vivimos aquí conocemos.",
+        "routeThreeTitle": "RUTA 3 - PANTANO DE GUADALEST",
+        "routeThreeText": "Si prefieres pasar un poquito menos de rato entre personas y un poquito más de rato viviendo la calma de la montaña, ésta ruta te da la oportunidad de conocer Guadalest reservando un poquito de tiempo para conocer la Joya Esmeralda, el único pantano de este color que podrás ver. ¡Pregúntanos su historia!",
+        "routeFourTitle": "RUTA 4 - GUADALEST PUEBLO",
+        "routeFourText": "¿Conoces Guadalest? Este pueblito de interior, enclavado entre montañas y construido sobre la roca más dura, te dará la oportunidad de respirar siglos de historia de un solo vistazo. Disfruta de sus múltiples y curiosos museos, prueba la gastronomía local y descubre la artesanía de la zona. ¡Ponte zapatos cómodos!",
+        "routeFiveTitle": "RUTA 5 - MUSEO DE VEHÍCULOS ANTIGUOS",
+        "routeFiveText": "Si eres de los que disfrutan de la naturaleza, de pasear tranquilo entre bosques, de disfrutar las vistas, parar para hacer fotos y vivir la vida con una auténtica Actitud Vespa, ésta es tu ruta. Conoce la cara más interior de la Marina Baixa y descubre el Museo de Vehículos Antiguos de Guadalest, donde serás transportado a otras épocas con su magnífica colección.",
+        "routeSixTitle": "RUTA 6 - ¡TE ESCUCHAMOS!",
+        "routeSixTextOne": "En Vespa Vintage Tours, entendemos que cada viajero es único, con sus propios intereses, horarios y deseos de exploración. Por eso hemos reservado un espacio donde puedes crear tu propia ruta turística a medida. Diseñada para ofrecerte la máxima flexibilidad y libertad. Esta opción te permite planificar tu aventura ideal según el tiempo disponible, la zona que deseas visitar y las experiencias que quieras incluir.",
+        "routeSixListTitleOne": "Infórmanos de tu tiempo disponible:",
+        "routeSixListTextOne": "Ya sea que tengas una mañana libre, un día entero o unas horas al final de la tarde y te mostraremos las mejores opciones para aprovechar al máximo cada minuto.",
+        "routeSixListTitleTwo": "Elige la zona que quieres explorar:",
+        "routeSixListTextTwo": "Desde encantadores pueblos históricos y paisajes naturales impresionantes hasta vibrantes ciudades llenas de vida, tienes la libertad de escoger la zona que más te apetece descubrir.",
+        "routeSixListTitleThree": "Personaliza tu experiencia:",
+        "routeSixListTextThree": "¿Buscas una experiencia gastronómica inolvidable? ¿Prefieres un recorrido cultural lleno de historia? ¿O tal vez una aventura al aire libre en plena naturaleza? Nos encantará escucharte.",
+        "routeSixTextTwo": "Tienes el control total para diseñar una aventura que se adapte perfectamente a tus intereses y necesidades. Deja de lado las rutas predefinidas y los horarios rígidos, y sumérgete en una exploración auténtica y relajante a tu propio ritmo.",
+        "routePrice": "precio de lanzamiento",
+        "routeHours": "horas"
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Nombre",
+        "email": "Correo",
+        "phone": "Teléfono",
+        "message": "Mensaje",
+        "routeDate": "Fecha de ruta",
+        "license": "¿Tienes carnet de moto?",
+        "licenseOne": "Selecciona una opción",
+        "licenseTwo": "Sí",
+        "licenseThree": "No",
+        "expirydate": "Fecha de caducidad",
+        "terms": "He leído y acepto los ",
+        "file": "Términos y Condiciones",
+        "submit": "Enviar",
+        "submitOk": "Formulario enviado correctamente",
+        "submitNo": "Ha ocurrido un error en el envío del formulario, por favor inténtalo nuevamente",
+        "showRoute": "Ver ruta"
+    },
+    "footer": {
+        "contact": "CONTÁCTANOS",
+        "navigation": "NAVEGACIÓN",
+        "navigationOne": "Inicio",
+        "navigationTwo": "Sobre nosotros",
+        "navigationThree": "Nuestras rutas",
+        "navigationFour": "Importante",
+        "navigationFive": "Contacto",
+        "hour": "09:00 - 17:00 (Rutas sábados y domingos)"
+    }
+}

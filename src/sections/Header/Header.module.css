@@ -30,7 +30,7 @@
     color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .overlay {
         padding: 100px 20px 50px;
     }

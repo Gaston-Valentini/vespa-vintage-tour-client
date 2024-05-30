@@ -13,8 +13,10 @@
     "@emailjs/browser": "^4.3.3",
     "@vis.gl/react-google-maps": "^1.0.0",
     "flatpickr": "^4.6.13",
+    "i18next": "^23.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.2",
     "react-icons": "^5.2.1",
     "react-phone-number-input": "^3.4.1"
   },

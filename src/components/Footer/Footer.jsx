@@ -1,9 +1,12 @@
 import style from "./Footer.module.css";
+import { useTranslation } from "react-i18next";
 import logo from "../../assets/images/logo-white.png";
 import { FaLocationDot, FaClock, FaPhone, FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
+    const [t, i18n] = useTranslation("global");
+
     const onWhatsapp = () => {
         const phone = "+34603120210";
         const message = "!Hola! Me gustaría recibir más información, mi nombre es: ";
@@ -18,14 +21,14 @@ export default function Footer() {
                 <img src={logo} />
             </div>
             <div className={style.data}>
-                <div className={style.dataTitle}>CONTÁCTANOS</div>
+                <div className={style.dataTitle}>{t("footer.contact")}</div>
                 <div className={style.dataSection}>
                     <FaLocationDot />
                     <p>Plaça Apr 3, 92, 03502 Benidorm, Alicante</p>
                 </div>
                 <div className={style.dataSection}>
                     <FaClock />
-                    <p>09:00 - 17:00 (Rutas sábados y domingos)</p>
+                    <p>{t("footer.hour")}</p>
                 </div>
                 <div className={style.dataSection}>
                     <FaPhone />
@@ -42,18 +45,21 @@ export default function Footer() {
                     <a href="https://www.instagram.com/vespavintagetours/" target="blank">
                         <FaInstagram />
                     </a>
-                    <a href="https://www.facebook.com/vespa.vintage.tours?rdid=x5RWAh9SkUKTAtcp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FzhmjqvfSA8ijzt2W%2F" target="blank">
+                    <a
+                        href="https://www.facebook.com/vespa.vintage.tours?rdid=x5RWAh9SkUKTAtcp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FzhmjqvfSA8ijzt2W%2F"
+                        target="blank"
+                    >
                         <FaFacebookF />
                     </a>
                 </div>
             </div>
             <div className={style.navbar}>
-                <div className={style.navbarTitle}>NAVEGACIÓN</div>
-                <a href="#header">Inicio</a>
-                <a href="#about">Sobre nosotros</a>
-                <a href="#routes">Nuestras rutas</a>
-                <a href="#important">Importante</a>
-                <a href="#contact">Contacto</a>
+                <div className={style.navbarTitle}>{t("footer.navigation")}</div>
+                <a href="#header">{t("footer.navigationOne")}</a>
+                <a href="#about">{t("footer.navigationTwo")}</a>
+                <a href="#routes">{t("footer.navigationThree")}</a>
+                <a href="#important">{t("footer.navigationFour")}</a>
+                <a href="#contact">{t("footer.navigationFive")}</a>
             </div>
         </section>
     );
