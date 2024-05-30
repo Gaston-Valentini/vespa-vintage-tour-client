@@ -4,10 +4,30 @@ import Title from "../../components/Title/Title";
 import { LuClock3 } from "react-icons/lu";
 import { IoMdPricetags } from "react-icons/io";
 import alteaAlbir from "../../assets/images/altea-albir.jpg";
+import alteaAlbirTwo from "../../assets/images/altea-albir-2.jpg";
+import alteaAlbirThree from "../../assets/images/altea-albir-3.jpg";
+import alteaAlbirFour from "../../assets/images/altea-albir-4.jpg";
+import alteaAlbirFive from "../../assets/images/altea-albir-5.jpg";
 import benidormVillaJoyosa from "../../assets/images/benidorm-villa-joyosa.jpg";
+import benidormVillaJoyosaTwo from "../../assets/images/benidorm-villa-joyosa-2.jpg";
+import benidormVillaJoyosaThree from "../../assets/images/benidorm-villa-joyosa-3.jpg";
+import benidormVillaJoyosaFour from "../../assets/images/benidorm-villa-joyosa-4.jpg";
+import benidormVillaJoyosaFive from "../../assets/images/benidorm-villa-joyosa-5.jpg";
 import museum from "../../assets/images/museum.jpg";
-import guadalest from "../../assets/images/guadalest.jpg";
+import museumTwo from "../../assets/images/museum-2.jpg";
+import museumThree from "../../assets/images/museum-3.jpg";
+import museumFour from "../../assets/images/museum-4.jpg";
+import museumFive from "../../assets/images/museum-5.jpg";
 import guadalestSwamp from "../../assets/images/guadalest-swamp.jpg";
+import guadalestSwampTwo from "../../assets/images/guadalest-swamp-2.jpg";
+import guadalestSwampThree from "../../assets/images/guadalest-swamp-3.jpg";
+import guadalestSwampFour from "../../assets/images/guadalest-swamp-4.jpg";
+import guadalestSwampFive from "../../assets/images/guadalest-swamp-5.jpg";
+import guadalest from "../../assets/images/guadalest.jpg";
+import guadalestTwo from "../../assets/images/guadalest-2.jpg";
+import guadalestThree from "../../assets/images/guadalest-3.jpg";
+import guadalestFour from "../../assets/images/guadalest-4.jpg";
+import guadalestFive from "../../assets/images/guadalest-5.jpg";
 import custom from "../../assets/images/custom.jpeg";
 
 export default function DetailedRoutes() {
@@ -19,12 +39,7 @@ export default function DetailedRoutes() {
             name: t("detailedRoutes.routeOneTitle"),
             description: <p>{t("detailedRoutes.routeOneText")}</p>,
             frontPage: alteaAlbir,
-            images: [
-                "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg",
-                "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg",
-                "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg",
-                "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg",
-            ],
+            images: [alteaAlbirTwo, alteaAlbirThree, alteaAlbirFour, alteaAlbirFive],
             time: `4 ${t("detailedRoutes.routeHours")}`,
             price: "145€",
             launchPrice: "120€",
@@ -34,12 +49,7 @@ export default function DetailedRoutes() {
             name: t("detailedRoutes.routeTwoTitle"),
             description: <p>{t("detailedRoutes.routeTwoText")}</p>,
             frontPage: benidormVillaJoyosa,
-            images: [
-                "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg",
-                "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg",
-                "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg",
-                "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg",
-            ],
+            images: [benidormVillaJoyosaTwo, benidormVillaJoyosaThree, benidormVillaJoyosaFour, benidormVillaJoyosaFive],
             time: `4 ${t("detailedRoutes.routeHours")}`,
             price: "145€",
             launchPrice: "120€",
@@ -49,28 +59,17 @@ export default function DetailedRoutes() {
             name: t("detailedRoutes.routeThreeTitle"),
             description: <p>{t("detailedRoutes.routeThreeText")}</p>,
             frontPage: guadalestSwamp,
-            images: [
-                "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg",
-                "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg",
-                "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg",
-                "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg",
-            ],
+            images: [guadalestSwampTwo, guadalestSwampThree, guadalestSwampFour, guadalestSwampFive],
             time: `4 ${t("detailedRoutes.routeHours")}`,
             price: "145€",
             launchPrice: "120€",
         },
         {
             id: 4,
-            name: "RUTA 4 - GUADALEST PUEBLO ",
             name: t("detailedRoutes.routeFourTitle"),
             description: <p>{t("detailedRoutes.routeFourText")}</p>,
             frontPage: guadalest,
-            images: [
-                "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg",
-                "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg",
-                "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg",
-                "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg",
-            ],
+            images: [guadalestTwo, guadalestThree, guadalestFour, guadalestFive],
             time: `3 ${t("detailedRoutes.routeHours")}`,
             price: "120€",
             launchPrice: "95€",
@@ -80,12 +79,7 @@ export default function DetailedRoutes() {
             name: t("detailedRoutes.routeFiveTitle"),
             description: <p>{t("detailedRoutes.routeFiveText")}</p>,
             frontPage: museum,
-            images: [
-                "https://unik.es/wp-content/uploads/2023/05/rutas-en-moto-para-hacer-en-verano.jpg",
-                "https://ngbrakes.com/wp-content/uploads/2023/09/Rutas-europeas-web.jpg",
-                "https://www.cuidamostumoto.com/sites/default/files/ruta-moto-1_baja.jpg",
-                "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg",
-            ],
+            images: [museumTwo, museumThree, museumFour, museumFive],
             time: `3 ${t("detailedRoutes.routeHours")}`,
             price: "120€",
             launchPrice: "95€",
