@@ -10,6 +10,7 @@ import Flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import { Spanish } from "flatpickr/dist/l10n/es.js";
 import MapComponent from "../../components/Map/Map";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     const [form, setForm] = useState({
@@ -17,9 +18,9 @@ export default function Contact() {
         email: "",
         phone: "",
         message: "",
-        routeDate: "",
+        route_date: "",
         license: "",
-        licenseDate: "",
+        expirydate: "",
     });
     const [message, setMessage] = useState("");
     const formRef = useRef(null);
@@ -55,13 +56,13 @@ export default function Contact() {
     };
 
     useEffect(() => {
-        const { name, phone, license, licenseDate } = form;
-        const areComplete = name !== "" && phone !== "" && license !== "" && licenseDate !== "";
+        const { name, phone, license, expirydate } = form;
+        const areComplete = name !== "" && phone !== "" && license !== "" && expirydate !== "";
         setCanSubmit(areComplete);
     }, [form]);
 
     useEffect(() => {
-        Flatpickr(document.getElementById("routeDate"), {
+        Flatpickr(document.getElementById("route_date"), {
             locale: {
                 ...Spanish,
             },
@@ -75,7 +76,7 @@ export default function Contact() {
             onChange: (selectedDates, dateStr) => {
                 setForm((prevState) => ({
                     ...prevState,
-                    routeDate: dateStr,
+                    route_date: dateStr,
                 }));
             },
         });
@@ -119,7 +120,7 @@ export default function Contact() {
                         <span>Fecha de ruta</span>
                         <div className={style.formSectionInput}>
                             <MdDateRange />
-                            <input type="text" id="routeDate" name="routeDate" placeholder="dd/mm/yyyy" readOnly value={form.routeDate} />
+                            <input type="text" id="route_date" name="route_date" placeholder="dd/mm/yyyy" readOnly value={form.route_date} />
                         </div>
                     </div>
                     <div className={style.formSection}>
@@ -141,7 +142,7 @@ export default function Contact() {
                         </span>
                         <div className={style.formSectionInput}>
                             <MdOutlineCreditCardOff />
-                            <input type="date" name="licenseDate" onChange={(e) => handleInput(e)} />
+                            <input type="date" name="expirydate" onChange={(e) => handleInput(e)} />
                         </div>
                     </div>
                     {message === 200 && <p className={style.formMessageOk}>Formulario enviado correctamente</p>}
