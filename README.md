@@ -52,6 +52,7 @@ más.
 -   Selector de código de área móvil mediante la implementación de la librería
     [react-phone-number-input](https://www.npmjs.com/package/react-phone-number-input).
 -   Selector de fechas limitadas a fin de semana mediante la implementación de la librería [flatpickr](https://flatpickr.js.org/).
+-   Descarga de archivos informativos.
 -   Implementación de variables de entorno, con el objetivo de mantener la privacidad y seguridad del usuario y ocultar información sensible.
 
 ## Tecnologías
