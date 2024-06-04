@@ -67,7 +67,7 @@ export default function Navbar() {
                         {t("navbar.linkFive")}
                     </a>
                 </div>
-                {windowSize < 1000 ? (
+                {windowSize < 1024 ? (
                     <div className={isOpen ? `${style.socialMobile} ${style.socialMobileOpen}` : style.socialMobile}>
                         <div onClick={onWhatsapp} className={style.socialMobileLink}>
                             <FaWhatsapp />
@@ -87,7 +87,7 @@ export default function Navbar() {
                     <></>
                 )}
             </div>
-            {windowSize > 1000 ? (
+            {windowSize > 1024 ? (
                 <div className={style.social}>
                     <div onClick={onWhatsapp} className={style.socialLink}>
                         <FaWhatsapp />

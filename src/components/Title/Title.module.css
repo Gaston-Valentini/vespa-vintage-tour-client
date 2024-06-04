@@ -5,7 +5,7 @@
     line-height: 1.2;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .container {
         font-size: 50px;
     }

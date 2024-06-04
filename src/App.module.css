@@ -6,7 +6,7 @@
     scroll-padding-top: 60px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     * {
         font-size: 13px;
         scroll-padding-top: 50px;

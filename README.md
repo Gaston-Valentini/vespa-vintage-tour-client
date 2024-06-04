@@ -1,4 +1,4 @@
-# Vespa Vintage Tour - Sitio web
+# Vespa Vintage Tours - Sitio web
 
 <img src="./src/assets/images/logo-white.png" width="100%"/>
 
@@ -44,13 +44,13 @@ más.
 ## Características
 
 -   Diseño web moderno y responsivo, adaptado a todas las resoluciones de pantalla.
--   Utilización de la [API de Google Maps](https://developers.google.com/maps) junto con la biblioteca
-    [react-google-maps](https://visgl.github.io/react-google-maps/) para renderizar un mapa interactivo y mostrar la ubicación del local.
+-   Implementación de elementos de diseño como íconos con la librería de [react-icons](https://react-icons.github.io/react-icons/)
+-   Selector de código de área para móviles con la librería [react-phone-number-input](https://www.npmjs.com/package/react-phone-number-input).
+-   Utilización de la librería [react-google-maps](https://visgl.github.io/react-google-maps/) para renderizar un componente con un mapa interactivo,
+    donde se muestra la ubicación del local.
 -   Implementación del servicio de [EmailJS](https://www.emailjs.com/) para gestionar el envío de correos electrónicos mediante un formulario al
     correo de la empresa.
 -   Selector de idiomas mediante la implementación de la librería [react-i18next](https://www.npmjs.com/package/react-i18next).
--   Selector de código de área móvil mediante la implementación de la librería
-    [react-phone-number-input](https://www.npmjs.com/package/react-phone-number-input).
 -   Selector de fechas limitadas a fin de semana mediante la implementación de la librería [flatpickr](https://flatpickr.js.org/).
 -   Descarga de archivos informativos.
 -   Implementación de variables de entorno, con el objetivo de mantener la privacidad y seguridad del usuario y ocultar información sensible.
@@ -59,8 +59,7 @@ más.
 
 -   <img src="./public/vite.png" style="height: 15px"/> **Vite:** Se utilizó como generador de proyeto y entorno de desarrollo.
 -   <img src="./public/react.png" style="height: 15px"/> **React:** Se utilizó como freamwork de desarrollo del cliente.
--   <img src="./public/npm.png" style="height: 15px"/> **Npm:** Se utilizó para la incorporación de librerías como react-router-dom, react-slick,
-    nodemon, etc.
+-   <img src="./public/npm.png" style="height: 15px"/> **Npm:** Se utilizó para la incorporación de todas las librerías utilizadas en el proyecto.
 -   <img src="./public/vercel.png" style="height: 15px"/> **Vercel:** Se utilizó para el despligue de la aplicación.
 
 ## Despliegue
@@ -73,7 +72,7 @@ Para correr este servicio de manera local deberá seguir los siguientes pasos:
 
 1. Clone este repositorio en tu máquina local con el comando:
     ```bash
-    git clone https://github.com/Gaston-Valentini/vespa-vintage-tour-client.git
+    git clone https://github.com/Gaston-Valentini/vespa-vintage-tours-client.git
     ```
 2. En la carpeta que se generó el proyecto, instale las dependencias con el comando:
     ```bash
@@ -90,6 +89,7 @@ Para correr este servicio de manera local deberá seguir los siguientes pasos:
 
 -   VITE_GOOGLE_API_KEY (Clave API del servicio de Google Maps)
 -   VITE_GOOGLE_PLACE_ID (Place ID del local en Google Maps)
+-   VITE_MAP_ID="VITE_MAP_ID" (Id del mapa del servicio de Google Maps)
 -   VITE_EMAILJS_SERVICE_ID (Id del servicio generado en EmailJS)
 -   VITE_EMAILJS_TEMPLATE_ID (Id de la plantilla que se utilizará para dar forma al correo electrónico de EmailJS)
 -   VITE_EMAILJS_PUBLIC_KEY (Clave pública del usuario de EmailJS)
@@ -97,7 +97,7 @@ Para correr este servicio de manera local deberá seguir los siguientes pasos:
 ## Estructura del proyecto
 
 ```
-benilaser-client/
+vespa-vintage-tours-client/
 ├── public/ (Contiene las imágenes del README.md)
 ├── src/
 │   ├── assets/ (Contiene contenido multimedia)
@@ -139,6 +139,6 @@ Para preguntas o colaboraciones, puedes contactarme a través de mis redes:
 
 ## Agradecimientos
 
-Me gustaría agradecer a todo el equipo de Benilaser por hacer posible esta colaboración.
+Me gustaría agradecer a todo el equipo de Vespa Vintage Tours por hacer posible esta colaboración.
 
-[Volver al inicio](#vespa-vintage-tour---sitio-web)
+[Volver al inicio](#vespa-vintage-tours---sitio-web)

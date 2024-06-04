@@ -124,7 +124,7 @@
     background-color: white;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .container {
         padding: 50px 20px;
         gap: 20px;
@@ -134,7 +134,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .routesRouteDataGalleryOne,
     .routesRouteDataGalleryTwo {
         display: flex;
