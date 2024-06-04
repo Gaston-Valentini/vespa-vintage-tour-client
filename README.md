@@ -20,7 +20,7 @@
 ## Descripción del Proyecto y Objetivo
 
 Este proyecto consiste en el desarrollo de la página web de [Vespa Vintage Tours](https://www.vespavintagetours.com), una empresa de excursiones, en
-la cual se ofrece a los clientes diferentes rutas de viaje que serán recorridas en las cláicas motocicletas Vespa. Se trata de un trabajo freelance
+la cual se ofrece a los clientes diferentes rutas de viaje que serán recorridas en las clásicas motocicletas Vespa. Se trata de un trabajo freelance
 cuyo objetivo es proporcionar a los clientes información detallada sobre las diferentes rutas, información para el viaje, facilidades de contacto y
 más.
 
