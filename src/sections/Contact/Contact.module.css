@@ -127,14 +127,14 @@
     gap: 10px;
 }
 
-.formTerms span {
+.formTerms a {
     font-weight: 800;
     color: var(--black);
     text-decoration: underline;
     transition: 0.3s;
 }
 
-.formTerms span:hover {
+.formTerms a:hover {
     cursor: pointer;
     color: var(--rose);
 }

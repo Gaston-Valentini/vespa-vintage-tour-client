@@ -12,6 +12,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import { Spanish } from "flatpickr/dist/l10n/es.js";
 import MapComponent from "../../components/Map/Map";
 import emailjs from "@emailjs/browser";
+import file from "../../assets/files/proteccion-de-datos-web-vvt.pdf";
 
 export default function Contact() {
     const [t, i18n] = useTranslation("global");
@@ -166,7 +167,10 @@ export default function Contact() {
                     <div className={style.formTerms}>
                         <input type="checkbox" onChange={(e) => setTerms(!terms)} />
                         <p>
-                            {t("contact.terms")} <span>{t("contact.file")}</span>
+                            {t("contact.terms")}{" "}
+                            <a href={file} download>
+                                {t("contact.file")}
+                            </a>
                         </p>
                     </div>
                     <input type="submit" value={t("contact.submit")} disabled={!canSubmit} className={style.formSubmit} />
