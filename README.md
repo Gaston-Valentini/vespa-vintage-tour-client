@@ -19,10 +19,9 @@
 
 ## Descripción del Proyecto y Objetivo
 
-Este proyecto consiste en el desarrollo de la página web de [Vespa Vintage Tours](https://www.vespavintagetours.com), una empresa de excursiones, en
-la cual se ofrece a los clientes diferentes rutas de viaje que serán recorridas en las clásicas motocicletas Vespa. Se trata de un trabajo freelance
-cuyo objetivo es proporcionar a los clientes información detallada sobre las diferentes rutas, información para el viaje, facilidades de contacto y
-más.
+Este proyecto consiste en el desarrollo de la página web de [Vespa Vintage Tours](https://www.vespavintagetours.com), una empresa de excursiones, en la cual se ofrece a los clientes diferentes rutas
+de viaje que serán recorridas en las clásicas motocicletas Vespa. Se trata de un trabajo freelance cuyo objetivo es proporcionar a los clientes información detallada sobre las diferentes rutas,
+información para el viaje, facilidades de contacto y más.
 
 ## Capturas de pantalla
 
@@ -46,10 +45,8 @@ más.
 -   Diseño web moderno y responsivo, adaptado a todas las resoluciones de pantalla.
 -   Implementación de elementos de diseño como íconos con la librería de [react-icons](https://react-icons.github.io/react-icons/)
 -   Selector de código de área para móviles con la librería [react-phone-number-input](https://www.npmjs.com/package/react-phone-number-input).
--   Utilización de la librería [react-google-maps](https://visgl.github.io/react-google-maps/) para renderizar un componente con un mapa interactivo,
-    donde se muestra la ubicación del local.
--   Implementación del servicio de [EmailJS](https://www.emailjs.com/) para gestionar el envío de correos electrónicos mediante un formulario al
-    correo de la empresa.
+-   Utilización de la librería [react-google-maps](https://visgl.github.io/react-google-maps/) para renderizar un componente con un mapa interactivo, donde se muestra la ubicación del local.
+-   Implementación del servicio de [EmailJS](https://www.emailjs.com/) para gestionar el envío de correos electrónicos mediante un formulario al correo de la empresa.
 -   Selector de idiomas mediante la implementación de la librería [react-i18next](https://www.npmjs.com/package/react-i18next).
 -   Selector de fechas limitadas a fin de semana mediante la implementación de la librería [flatpickr](https://flatpickr.js.org/).
 -   Descarga de archivos informativos.
@@ -88,8 +85,7 @@ Para correr este servicio de manera local deberá seguir los siguientes pasos:
 ## Variables de entorno
 
 -   VITE_GOOGLE_API_KEY (Clave API del servicio de Google Maps)
--   VITE_GOOGLE_PLACE_ID (Place ID del local en Google Maps)
--   VITE_MAP_ID="VITE_MAP_ID" (Id del mapa del servicio de Google Maps)
+-   VITE_GOOGLE_MAP_ID (Id del mapa del servicio de Google Maps)
 -   VITE_EMAILJS_SERVICE_ID (Id del servicio generado en EmailJS)
 -   VITE_EMAILJS_TEMPLATE_ID (Id de la plantilla que se utilizará para dar forma al correo electrónico de EmailJS)
 -   VITE_EMAILJS_PUBLIC_KEY (Clave pública del usuario de EmailJS)
@@ -139,6 +135,6 @@ Para preguntas o colaboraciones, puedes contactarme a través de mis redes:
 
 ## Agradecimientos
 
-Me gustaría agradecer a todo el equipo de Vespa Vintage Tours por hacer posible esta colaboración.
+Me gustaría agradecer a todo el equipo de Benilaser por hacer posible esta colaboración.
 
 [Volver al inicio](#vespa-vintage-tours---sitio-web)
